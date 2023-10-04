@@ -88,7 +88,6 @@ if __name__=='__main__':
     dataset = result.split(';')
     url = dataset[0]
     dataset_url = url.strip()
-    print(dataset_url)
     zip_file_url = get_description_for_dataset(dataset_url)
     result = menu('\nDownload dataset [yes/no]?', ['yes', 'no'])
     if result != 'no':
