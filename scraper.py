@@ -81,7 +81,6 @@ if __name__=='__main__':
     args = parser.parse_args()
     search = args.search
 
-    #proxy = {'http':'http://67.43.236.20:15507','https':'http://67.43.236.20:15507'}
     urls, descriptions = get_contents_of_physio(search)
     urls = set(urls)
     descriptions = set(descriptions)
